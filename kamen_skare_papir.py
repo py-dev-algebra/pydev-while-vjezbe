@@ -27,8 +27,17 @@ while broj_partija < 3:
     print()
     print(izbornik)
     print()
-    izbor_korisnika = int(input('Izaberite jednu od ponudenih opcija: '))
 
+    while True:
+        izbor_korisnika = int(input('Izaberite jednu od ponudenih opcija: '))
+
+        if izbor_korisnika in [1, 2, 3]:
+            break
+        else:
+            print('Krivo ste unijeli')
+
+
+    # PROVJERA POBJEDNIKA PARTIJE
     if izbor_korisnika == izbor_racunala:
         print('Nerijeseno')
         broj_partija += 1
@@ -68,6 +77,7 @@ while broj_partija < 3:
         print('Racunalo je osvojilo jedan bod')
         bodovi_racunalo += 1
         broj_partija += 1
+
 
 # KRAJ
 if bodovi_racunalo > bodovi_korisnik:
