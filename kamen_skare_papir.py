@@ -23,6 +23,8 @@ bodovi_racunalo = 0
 # GLAVNI PROGRAM - MAIN
 while broj_partija < 3:
     izbor_racunala = random.randint(1, 3)
+    print(izbor_racunala)
+    print()
     print(izbornik)
     print()
     izbor_korisnika = int(input('Izaberite jednu od ponudenih opcija: '))
@@ -68,3 +70,9 @@ while broj_partija < 3:
         broj_partija += 1
 
 # KRAJ
+if bodovi_racunalo > bodovi_korisnik:
+    print("Izgubili ste")
+elif bodovi_racunalo < bodovi_korisnik:
+    print("Pobijedili ste")
+else:
+    print("Nerijeseno")
