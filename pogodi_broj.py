@@ -18,14 +18,17 @@ while True:
     broj_pokusaja += 1
     
     if uneseni_broj == zamisljeni_broj:
-        print(f'Pogodak iz {broj_pokusaja} puta.')
         break
     elif uneseni_broj > zamisljeni_broj:
-        print('Unijeli ste veci broj')
+        print('Unijeli ste veci broj od zamisljenog broja.\n')
 
     elif uneseni_broj < zamisljeni_broj:
-        print('Unijeli ste manji broj')
+        print('Unijeli ste manji broj od zamisljenog broja.\n')
     
 
 
 # PRIKAZ REZULTATA / KRAJ
+print()
+print(f'Cestitamo! Pogodili ste zamisljeni broj {zamisljeni_broj}')
+print(f'Za to Vam je trebalo {broj_pokusaja} pokusaja.')
+print()
